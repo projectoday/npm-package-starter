@@ -1,0 +1,32 @@
+{
+  "name": "es6-backend-starter",
+  "version": "0.0.0",
+  "description": "backend starter for myself",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node -- index.js",
+    "test": "mocha --recursive --require babel-register",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timqian/es6-backend-starter.git"
+  },
+  "keywords": [
+    "starter",
+    "node",
+    "backend"
+  ],
+  "author": "timqian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timqian/es6-backend-starter/issues"
+  },
+  "homepage": "https://github.com/timqian/es6-backend-starter#readme",
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.8.0",
+    "mocha": "^2.3.4"
+  }
+}
